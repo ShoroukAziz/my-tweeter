@@ -9,3 +9,12 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+header h2 {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+header h2 span {
+  font-weight: 600;
+}
