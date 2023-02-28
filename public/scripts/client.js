@@ -81,6 +81,7 @@ $(document).ready(function () {
       type: "POST",
       url: '/tweets',
       data: $(this).serialize(),
+      success: loadTweets
     });
 
   });
