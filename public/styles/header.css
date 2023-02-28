@@ -1,4 +1,4 @@
-header {
+.site-header {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -10,11 +10,11 @@ header {
   align-items: center;
 }
 
-header h2 {
+.site-header h2 {
   color: #ffffff;
   font-weight: 300;
 }
 
-header h2 span {
+.site-header h2 span {
   font-weight: 600;
 }
