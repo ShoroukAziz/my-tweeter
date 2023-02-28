@@ -39,6 +39,7 @@
   border: none;
   border-radius: 3px;
   padding: 0.2em 0.3em;
+  cursor: pointer;
 }
 
 .count-warning {
