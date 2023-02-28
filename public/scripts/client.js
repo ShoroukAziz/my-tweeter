@@ -74,5 +74,11 @@ const createTweetElement = function (tweet) {
 
 
 $(document).ready(function () {
+
   renderTweets(data);
+  $('section.new-tweet form').on('submit', (e) => {
+    e.preventDefault();
+  })
+
+
 });
