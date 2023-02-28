@@ -1,0 +1,68 @@
+/*
+ * Tweet Container
+ */
+article.tweet {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #545149;
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+article.tweet:hover {
+  box-shadow: 7px 7px 0px #c9cae2;
+}
+
+/*
+ * Tweet Header
+ */
+article.tweet header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+article.tweet img {
+  width: 48px;
+  height: 48px;
+  margin-right: 7px;
+}
+
+
+article.tweet .handel {
+  color: #C5CBE3;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+/*
+ * Tweet Content
+ */
+
+article.tweet section {
+  border-bottom: 3px solid #545149;
+  padding: 25px 10px;
+  margin-bottom: 10px;
+}
+
+/*
+ * Tweet Footer
+ */
+
+article.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+  padding: 5px 10px;
+}
+
+article.tweet i {
+  font-size: 0.7em;
+  color: #4056A1;
+  margin: 2px;
+}
+
+article.tweet i:hover {
+  font-size: 0.7em;
+  color: #D69A27;
+}
