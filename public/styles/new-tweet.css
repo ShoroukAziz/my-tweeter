@@ -40,3 +40,7 @@
   border-radius: 3px;
   padding: 0.2em 0.3em;
 }
+
+.count-warning {
+  color: #FF0000;
+}
