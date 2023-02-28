@@ -53,19 +53,39 @@ const createTweetElement = function (tweet) {
   `);
 }
 
+const validateTweet = function (tweetText) {
+  if (!tweetText) {
+    return { isValid: false, errorMesage: 'Your Tweet can\'t be empty!' };
+  }
+  if (tweetText.length > 140) {
+    return { isValid: false, errorMesage: 'Your Tweet can\'t be more than 140 characters.\nKeep it short & sweet!' };
+  }
+  return { isValid: true };
+}
 
 $(document).ready(function () {
 
   loadTweets();
+
   $('section.new-tweet form').on('submit', function (e) {
+
     e.preventDefault();
+
+    const { isValid, errorMesage } = validateTweet($('#tweet-text').val());
+    if (!isValid) {
+      alert(errorMesage);
+      return;
+    }
+
     $.ajax({
       type: "POST",
       url: '/tweets',
       data: $(this).serialize(),
     });
 
-  })
+  });
+
 
 
 });
+
