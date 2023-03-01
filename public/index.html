@@ -51,30 +51,33 @@
     </div>
   </nav>
 
-  <header class="site-header">
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
-    <div>
-      <h2> <span>Shorouk</span> Abdelaziz</h2>
-    </div>
-  </header>
+  <div class="container">
+    <header class="site-header">
+      <div>
+        <img src="/images/profile-hex.png">
+      </div>
+      <div>
+        <h2> <span>Shorouk</span> Abdelaziz</h2>
+      </div>
+    </header>
 
-  <!-- Page-specific (main) content here -->
-  <main class="container">
+    <!-- Page-specific (main) content here -->
+    <main>
 
-    <section class="new-tweet">
-      <form method="POST" action="/tweets">
-        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-        <div>
-          <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
-    <section class="tweets"></section>
+      <section class="new-tweet">
+        <form method="POST" action="/tweets">
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <section class="tweets"></section>
 
-  </main>
+    </main>
+  </div>
+
 </body>
 
 </html>
