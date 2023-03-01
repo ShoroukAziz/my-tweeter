@@ -24,6 +24,7 @@ const loadTweets = function () {
 const renderTweets = function (tweets) {
 
   const $tweetsSection = $('section.tweets');
+  $tweetsSection.empty();
   tweets.forEach((tweet) => {
     $tweetsSection.prepend(createTweetElement(tweet));
   });
