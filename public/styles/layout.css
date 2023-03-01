@@ -30,9 +30,38 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
 main {
   width: 90%;
   background-color: inherit;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
+  row-gap: 30px;
+}
+
+
+@media (min-width: 1024px) {
+
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 90%;
+    column-gap: 10%;
+    margin-top: 190px;
+  }
+
+  main {
+    margin-top: 0px;
+    flex: 3;
+  }
+
 }

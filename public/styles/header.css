@@ -18,3 +18,12 @@
 .site-header h2 span {
   font-weight: 600;
 }
+
+@media (min-width: 1024px) {
+
+  .site-header {
+    padding-top: unset;
+    height: 400px;
+    flex: 2;
+  }
+}
