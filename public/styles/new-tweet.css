@@ -45,3 +45,25 @@
 .count-warning {
   color: #FF0000;
 }
+
+.user-input-warning {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #D85351;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.user-input-warning p {
+  margin-left: 4px;
+}
+
+.close {
+  margin-left: auto;
+  align-self: flex-start;
+  cursor: pointer;
+}
