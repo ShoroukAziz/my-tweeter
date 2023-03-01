@@ -3,6 +3,12 @@
  */
 
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const loadTweets = function () {
   $.ajax({
     type: "GET",
@@ -39,7 +45,7 @@ const createTweetElement = function (tweet) {
       <span class="handle">${tweet.user.handle}</span>
     </header>
     <section>
-      ${tweet.content.text}
+      ${escape(tweet.content.text)}
     </section>
     <footer>
       <time>${timeago.format(tweet.created_at)}</time>
