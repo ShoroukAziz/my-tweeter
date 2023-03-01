@@ -79,7 +79,13 @@ $(document).ready(function () {
 
     const { isValid, errorMesage } = validateTweet($('#tweet-text').val());
     if (!isValid) {
-      alert(errorMesage);
+      $('section.new-tweet').prepend(`
+          <div class="user-input-warning">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p> ${errorMesage} </p>
+          <i class="close fa-solid fa-circle-xmark"></i>
+        </div>`);
+
       return;
     }
 
@@ -92,7 +98,13 @@ $(document).ready(function () {
 
   });
 
-
+  // Attach a delegated event handler
+  $('section.new-tweet').on('click', '.close', function (e) {
+    $(this).parent().remove();
+  })
 
 });
+
+
+
 
