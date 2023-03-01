@@ -27,19 +27,22 @@ nav {
   0% {
     top: -5px;
   }
+
   100% {
     top: 5px;
   }
 }
+
 nav i {
   color: red;
 }
 
 nav span {
-  font-family: "Bungee", sans-serif;
+  font-family: 'Bungee', sans-serif;
 }
 
-@media (min-width: 1024px) {
+@media (min-width:1024px) {
+
   nav {
     background-color: #4056A1;
   }

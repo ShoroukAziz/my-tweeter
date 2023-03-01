@@ -13,16 +13,18 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  font-family: "Bungee", sans-serif;
+  font-family: 'Bungee', sans-serif;
 }
 
 #tweet-text {
+
   height: 50px;
   background-color: transparent;
   resize: none;
   outline: none;
   border: none;
   border-bottom: 3px solid #545149;
+
 }
 
 #tweet-text::placeholder {
