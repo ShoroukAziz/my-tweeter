@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Conatins all the logic for the composer buttons
+ */
+
+
 const NAV_HIGHT = 120;
 
 /**
@@ -18,6 +23,7 @@ const scrollToElement = function (element, navHight = 0) {
 
 $(document).ready(function () {
 
+  // Scroll to the text area & focus whenever a compose button is clicked
   $('.compose').click(function () {
 
     $("textarea")[0].focus();
@@ -25,6 +31,10 @@ $(document).ready(function () {
 
   });
 
+  /* Display the composer button in the nav bar 
+  *  when the page is not scrolled
+  *  and, on scrolling hide it and display the other button down the page.
+  */
   $(window).scroll(function () {
 
     if ($(window).scrollTop() > 0) {
@@ -35,9 +45,6 @@ $(document).ready(function () {
       $('button.compose').removeClass('visable');
       $('div.compose').removeClass('hidden');
     }
-
-
   })
-
 
 });
