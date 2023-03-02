@@ -18,6 +18,7 @@ article.tweet:hover {
  */
 article.tweet header {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
@@ -48,6 +49,7 @@ article.tweet section {
  */
 article.tweet footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   font-size: 0.7em;
   padding: 5px 10px;

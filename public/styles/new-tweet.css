@@ -18,6 +18,7 @@ form {
 }
 form div {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 20px;
   font-family: "Bungee", sans-serif;
@@ -46,6 +47,7 @@ textarea::placeholder {
 
 .user-input-warning {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   background-color: #D85351;

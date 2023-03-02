@@ -1,8 +1,8 @@
 @use 'base';
+@import "base";
 
 .new-tweet {
-  display: flex;
-  flex-direction: column;
+  @include flex;
   justify-content: center;
 
   button {
@@ -17,11 +17,10 @@
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+  @include flex;
 
   div {
-    display: flex;
+    @include flex(row);
     justify-content: space-between;
     margin-top: 20px;
     font-family: base.$secondaery-font,
@@ -53,7 +52,7 @@ textarea::placeholder {
 }
 
 .user-input-warning {
-  display: flex;
+  @include flex(row);
   justify-content: flex-start;
   align-items: center;
   background-color: base.$danger-bg-color;

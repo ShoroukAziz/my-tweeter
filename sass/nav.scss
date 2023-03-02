@@ -1,7 +1,8 @@
 @use 'base';
+@import "base";
 
 nav {
-  display: flex;
+  @include flex(row);
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -21,8 +22,7 @@ nav {
   }
 
   .compose {
-    display: flex;
-    flex-direction: column;
+    @include flex;
     align-items: center;
     cursor: pointer;
 

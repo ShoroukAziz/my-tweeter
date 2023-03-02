@@ -37,10 +37,10 @@ body {
 }
 
 main {
-  width: 90%;
-  background-color: inherit;
   display: flex;
   flex-direction: column;
+  width: 90%;
+  background-color: inherit;
   margin-top: 50px;
   row-gap: 30px;
 }

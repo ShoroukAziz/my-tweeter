@@ -23,3 +23,12 @@ $fallback-font: sans-serif;
 // other
 //
 $desktop-width: 1024px;
+
+//
+// mixins
+//
+@mixin flex($direction: column) {
+
+  display: flex;
+  flex-direction: $direction;
+}

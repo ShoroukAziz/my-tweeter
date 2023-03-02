@@ -1,4 +1,5 @@
 @use 'base';
+@import "base";
 
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
@@ -20,8 +21,7 @@ html {
  */
 
 body {
-  display: flex;
-  flex-direction: column;
+  @include flex;
   align-items: center;
   color: base.$lines-color;
   background-color: base.$background-color;
@@ -34,18 +34,16 @@ body {
  */
 
 .container {
-  display: flex;
-  flex-direction: column;
+  @include flex;
   align-items: center;
   width: 100%;
 }
 
 
 main {
+  @include flex;
   width: 90%;
   background-color: inherit;
-  display: flex;
-  flex-direction: column;
   margin-top: 50px;
   row-gap: 30px;
 }
