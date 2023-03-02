@@ -12,7 +12,7 @@ nav {
   padding-right: 1.5em;
 }
 nav i {
-  color: #ff0000;
+  color: #e00000;
 }
 nav span {
   font-family: "Bungee", sans-serif;
@@ -42,7 +42,7 @@ nav .compose i {
   }
 }
 button.compose {
-  background-color: #ff0000;
+  background-color: #e00000;
   cursor: pointer;
   color: #ffffff;
   border: none;
