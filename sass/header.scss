@@ -4,8 +4,8 @@
 .site-header {
   @include flex;
   width: 100%;
-  padding-top: 120px;
-  height: 520px;
+  padding-top: base.$nav-height;
+  height: base.$nav-height + base.$header-height;
   background-color: base.$secondaery-color;
   background-image: url('/images/asfalt-light.png');
   justify-content: center;
@@ -26,7 +26,7 @@
 
   .site-header {
     padding-top: unset;
-    height: 400px;
+    height: base.$header-height;
     flex: 2;
   }
 }
