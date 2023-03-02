@@ -1,14 +1,11 @@
-/*
- * Client-side JS logic goes here
+/**
+ * @fileoverview Conatins main client-side JS logic
  */
 
 
-const escape = function (str) {
-  let div = document.createElement("div");
-  div.appendChild(document.createTextNode(str));
-  return div.innerHTML;
-};
-
+/**
+ * Fetches all tweets from the server then renders them.
+ */
 const loadTweets = function () {
   $.ajax({
     type: "GET",
@@ -31,62 +28,20 @@ const renderTweets = function (tweets) {
 
 }
 
-/**
- * Creates a jQuery node for a tweet from a tweet object.
- * @param  {object}      tweet        [a tweet object]
- * @return {jQueryNode}               [an HTML article node that represents a tweet]
- */
-const createTweetElement = function (tweet) {
-
-  return $(`
-  <article class="tweet">
-    <header>
-      <img alt="avatar" src=${tweet.user.avatars} />
-      <span>${tweet.user.name}</span>
-      <span class="handle">${tweet.user.handle}</span>
-    </header>
-    <section>
-      ${escape(tweet.content.text)}
-    </section>
-    <footer>
-      <time>${timeago.format(tweet.created_at)}</time>
-      <div class="icons">
-        <a href="#"><i class="fa-solid fa-flag"></i></a>
-        <a href="#"><i class="fa-solid fa-retweet"></i></a>
-        <a href="#"><i class="fa-solid fa-heart"></i></a>
-      </div>
-  </footer>
-  </article>
-  `);
-}
-
-const validateTweet = function (tweetText) {
-  if (!tweetText) {
-    return { isValid: false, errorMesage: 'Your Tweet can\'t be empty!' };
-  }
-  if (tweetText.length > 140) {
-    return { isValid: false, errorMesage: 'Your Tweet can\'t be more than 140 characters.\nKeep it short & sweet!' };
-  }
-  return { isValid: true };
-}
 
 $(document).ready(function () {
 
   loadTweets();
 
+  // New tweet form submit handler
   $('form').on('submit', function (e) {
 
     e.preventDefault();
 
     const { isValid, errorMesage } = validateTweet($('#tweet-text').val());
-    if (!isValid) {
-      $('form').prepend(`
-          <div class="user-input-warning">
-          <i class="fa-solid fa-triangle-exclamation"></i>
-          <p> ${errorMesage} </p>
-          <i class="close fa-solid fa-circle-xmark"></i>
-        </div>`);
 
+    if (!isValid) {
+      $('form').prepend(createWarningElement(errorMesage));
       return;
     }
 
@@ -99,7 +54,7 @@ $(document).ready(function () {
 
   });
 
-  // Attach a delegated event handler
+  // Attach a delegated event handler to close the warnings
   $('form').on('click', '.close', function (e) {
     $(this).parent().remove();
   })
