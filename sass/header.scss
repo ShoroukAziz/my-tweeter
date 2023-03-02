@@ -10,16 +10,17 @@
   background-image: url('/images/asfalt-light.png');
   justify-content: center;
   align-items: center;
+
+  h2 {
+    color: base.$white-color;
+    font-weight: 300;
+
+    span {
+      font-weight: 600;
+    }
+  }
 }
 
-.site-header h2 {
-  color: base.$white-color;
-  font-weight: 300;
-}
-
-.site-header h2 span {
-  font-weight: 600;
-}
 
 @media (min-width: base.$desktop-width) {
 
