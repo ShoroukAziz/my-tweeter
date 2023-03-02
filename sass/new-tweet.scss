@@ -4,22 +4,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  button {
+    background-color: base.$primary-color;
+    color: base.$white-color;
+    border: none;
+    border-radius: 3px;
+    padding: 0.2em 0.3em;
+    cursor: pointer;
+  }
+
 }
 
-.new-tweet form {
+form {
   display: flex;
   flex-direction: column;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-family: base.$secondaery-font,
+      base.$fallback-font;
+  }
 }
 
-.new-tweet form div {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  font-family: base.$secondaery-font,
-    base.$fallback-font;
-}
-
-#tweet-text {
+textarea {
 
   height: 50px;
   background-color: transparent;
@@ -30,20 +40,14 @@
 
 }
 
-#tweet-text::placeholder {
+textarea::placeholder {
   font-weight: bold;
   color: base.$lines-color;
 }
 
-.new-tweet button {
-  background-color: base.$primary-color;
-  color: base.$white-color;
-  border: none;
-  border-radius: 3px;
-  padding: 0.2em 0.3em;
-  cursor: pointer;
-}
-
+/*
+/* Warnings
+*/
 .count-warning {
   color: base.$danger-color;
 }
@@ -58,11 +62,12 @@
   border-radius: 4px;
   color: base.$white-color;
   font-size: 0.8em;
+
+  p {
+    margin-left: 4px;
+  }
 }
 
-.user-input-warning p {
-  margin-left: 4px;
-}
 
 .close {
   margin-left: auto;

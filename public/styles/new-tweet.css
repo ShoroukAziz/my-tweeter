@@ -3,33 +3,6 @@
   flex-direction: column;
   justify-content: center;
 }
-
-.new-tweet form {
-  display: flex;
-  flex-direction: column;
-}
-
-.new-tweet form div {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  font-family: "Bungee", sans-serif;
-}
-
-#tweet-text {
-  height: 50px;
-  background-color: transparent;
-  resize: none;
-  outline: none;
-  border: none;
-  border-bottom: 3px solid #545149;
-}
-
-#tweet-text::placeholder {
-  font-weight: bold;
-  color: #545149;
-}
-
 .new-tweet button {
   background-color: #4056A1;
   color: #ffffff;
@@ -39,6 +12,34 @@
   cursor: pointer;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+form div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-family: "Bungee", sans-serif;
+}
+
+textarea {
+  height: 50px;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #545149;
+}
+
+textarea::placeholder {
+  font-weight: bold;
+  color: #545149;
+}
+
+/*
+/* Warnings
+*/
 .count-warning {
   color: #ff0000;
 }
@@ -54,7 +55,6 @@
   color: #ffffff;
   font-size: 0.8em;
 }
-
 .user-input-warning p {
   margin-left: 4px;
 }
