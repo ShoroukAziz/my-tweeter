@@ -32,16 +32,22 @@ const createTweetElement = function (tweet) {
 }
 
 /**
- * Creates a jQuery node for a warning from a warning message.
- * @param  {string}      errorMesage      [The warning message]
- * @return {jQueryNode}                   [a warning node]
+ * Creates a jQuery node for a warning from a warning message 
+ * and assigns it a unique id, to be able to remove it after a few seconds.
+ * @param  {string}                            errorMesage   [The warning message]
+ * @return {{element:jQueryNode , id:number}}                [an object with a warning node and its unique id]
  */
 const createWarningElement = function (errorMesage) {
-  return $(`
-    <div class="user-input-warning">
+  const id = generateRandomId();
+  return {
+    element:
+      $(`
+    <div class="user-input-warning" id = "${id}">
         <i class="fa-solid fa-triangle-exclamation"></i>
         <p> ${errorMesage} </p>
         <i class="close fa-solid fa-circle-xmark"></i>
     </div>
-  `);
+  `),
+    id: id
+  };
 }

@@ -41,7 +41,14 @@ $(document).ready(function () {
     const { isValid, errorMesage } = validateTweet($('#tweet-text').val());
 
     if (!isValid) {
-      $('form').prepend(createWarningElement(errorMesage));
+
+      const { warningElement, elementId } = createWarningElement(errorMesage);
+      $('form').prepend(warningElement);
+
+      // remove the warning after 2.5 seconds
+      setTimeout(() => {
+        $('form div').remove(`#${elementId}`);
+      }, 2500);
       return;
     }
 
