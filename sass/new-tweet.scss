@@ -32,12 +32,15 @@ form {
     border: none;
     border-bottom: 3px solid $lines-color;
 
+
+    &::placeholder {
+      font-weight: bold;
+      color: $lines-color;
+    }
+
   }
 
-  textarea::placeholder {
-    font-weight: bold;
-    color: $lines-color;
-  }
+
 
   output {
     font-family: $secondaery-font,
