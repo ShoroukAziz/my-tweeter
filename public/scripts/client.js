@@ -47,7 +47,7 @@ $(document).ready(function () {
 
     e.preventDefault();
 
-    const { isValid, errorMesage } = validateTweet($('#tweet-text').val());
+    const { isValid, errorMesage } = validateTweet($('#tweet-text').val(), MAX_TWEET_LENGHT);
 
     if (!isValid) {
 
