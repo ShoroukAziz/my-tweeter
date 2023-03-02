@@ -41,3 +41,23 @@ nav .compose i {
     background-color: #4056A1;
   }
 }
+button.compose {
+  background-color: #ff0000;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  visibility: hidden;
+}
+
+button.visable {
+  visibility: visible;
+}
+
+div.hidden {
+  visibility: hidden;
+}

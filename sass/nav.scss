@@ -49,3 +49,25 @@ nav {
     background-color: base.$primary-color;
   }
 }
+
+
+button.compose {
+  background-color: base.$danger-color;
+  cursor: pointer;
+  color: base.$white-color;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  visibility: hidden;
+}
+
+button.visable {
+  visibility: visible;
+}
+
+div.hidden {
+  visibility: hidden;
+}
