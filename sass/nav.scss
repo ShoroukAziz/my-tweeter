@@ -45,7 +45,7 @@ nav {
 }
 
 
-@media (min-width:1024px) {
+@media (min-width: base.$desktop-width) {
 
   nav {
     background-color: base.$primary-color;

@@ -21,7 +21,7 @@
   font-weight: 600;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: base.$desktop-width) {
 
   .site-header {
     padding-top: unset;
