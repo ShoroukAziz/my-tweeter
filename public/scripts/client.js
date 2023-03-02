@@ -61,10 +61,20 @@ $(document).ready(function () {
 
   });
 
+
   // Attach a delegated event handler to close the warnings
   $('form').on('click', '.close', function (e) {
     $(this).parent().remove();
   })
+
+  // Attach a delegated event handler to like tweets
+  $('.tweets').on("click", 'article.tweet .fa-heart', function (e) {
+
+    e.preventDefault();
+    $(this).toggleClass('liked', 'animateOnce');
+    $(this).toggleClass('animateOnce');
+  })
+
 
 });
 

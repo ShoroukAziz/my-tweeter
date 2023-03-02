@@ -65,3 +65,25 @@ article.tweet i {
 article.tweet i:hover {
   color: #D69A27;
 }
+
+/*
+*  Liking Tweets
+*/
+article.tweet .liked {
+  color: #e00000;
+}
+
+article.tweet .liked:hover {
+  color: #e00000;
+}
+
+.animateOnce {
+  animation: beat 0.25s 2 alternate;
+  transform-origin: center;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.4);
+  }
+}
