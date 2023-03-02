@@ -25,18 +25,13 @@ body {
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-.container {
+body .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-
-main {
+body .container main {
   display: flex;
   flex-direction: column;
   align-items: unset;
@@ -46,14 +41,14 @@ main {
 }
 
 @media (min-width: 1024px) {
-  .container {
+  body .container {
     flex-direction: row;
     align-items: flex-start;
     width: 90%;
     column-gap: 10%;
     margin-top: 190px;
   }
-  main {
+  body .container main {
     margin-top: 0px;
     flex: 3;
   }

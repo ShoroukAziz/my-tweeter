@@ -25,39 +25,43 @@ body {
   background-color: $background-color;
   font-size: 24px;
   font-family: $primary-font, $fallback-font;
+
+  .container {
+    @include flex;
+    width: 100%;
+
+    main {
+      @include flex($alignment: unset);
+      width: 90%;
+      margin-top: 50px;
+      row-gap: 30px;
+    }
+  }
+
+
+
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
-.container {
-  @include flex;
-  width: 100%;
-}
-
-
-main {
-  @include flex($alignment: unset);
-  width: 90%;
-  margin-top: 50px;
-  row-gap: 30px;
-}
 
 
 @media (min-width: $desktop-width) {
 
-  .container {
-    flex-direction: row;
-    align-items: flex-start;
-    width: 90%;
-    column-gap: 10%;
-    margin-top: $nav-height +70;
+  body {
+
+    .container {
+      flex-direction: row;
+      align-items: flex-start;
+      width: 90%;
+      column-gap: 10%;
+      margin-top: $nav-height + 70;
+
+      main {
+        margin-top: 0px;
+        flex: 3;
+      }
+
+    }
   }
 
-  main {
-    margin-top: 0px;
-    flex: 3;
-  }
 
 }
