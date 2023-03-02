@@ -3,6 +3,14 @@
  */
 
 
+/** 
+* displays the maximum tweet length in the submit tweet form's footer.
+* @param  {number} maxTweetLength       [maximum allowed length for a tweet to be displayed]
+*/
+const displayMaxTweetLength = function (maxTweetLength) {
+  $('output').text(maxTweetLength);
+}
+
 /**
  * Fetches all tweets from the server then renders them.
  */
@@ -31,6 +39,7 @@ const renderTweets = function (tweets) {
 
 $(document).ready(function () {
 
+  displayMaxTweetLength(MAX_TWEET_LENGHT);
   loadTweets();
 
   // New tweet form submit handler
@@ -48,7 +57,7 @@ $(document).ready(function () {
       // remove the warning after 2.5 seconds
       setTimeout(() => {
         $('form div').remove(`#${elementId}`);
-      }, 2500);
+      }, ERROR_MESSAGE_DISPLAY_TIME);
       return;
     }
 
