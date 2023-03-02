@@ -25,5 +25,19 @@ $(document).ready(function () {
 
   });
 
+  $(window).scroll(function () {
+
+    if ($(window).scrollTop() > 0) {
+      $('button.compose').addClass('visable');
+      $('div.compose').addClass('hidden');
+    }
+    else {
+      $('button.compose').removeClass('visable');
+      $('div.compose').removeClass('hidden');
+    }
+
+
+  })
+
 
 });
