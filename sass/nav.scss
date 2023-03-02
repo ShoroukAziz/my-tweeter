@@ -1,4 +1,3 @@
-@use 'base';
 @import "base";
 
 nav {
@@ -8,16 +7,16 @@ nav {
   top: 0px;
   width: 100%;
   height: 120px;
-  color: base.$white-color;
+  color: $white-color;
   padding-left: 1.5em;
   padding-right: 1.5em;
 
   i {
-    color: base.$danger-color;
+    color: $danger-color;
   }
 
   span {
-    font-family: base.$secondaery-font, base.$fallback-font;
+    font-family: $secondaery-font, $fallback-font;
   }
 
   .compose {
@@ -43,18 +42,18 @@ nav {
 }
 
 
-@media (min-width: base.$desktop-width) {
+@media (min-width: $desktop-width) {
 
   nav {
-    background-color: base.$primary-color;
+    background-color: $primary-color;
   }
 }
 
 
 button.compose {
-  background-color: base.$danger-color;
+  background-color: $danger-color;
   cursor: pointer;
-  color: base.$white-color;
+  color: $white-color;
   border: none;
   padding: 10px 15px;
   border-radius: 50%;

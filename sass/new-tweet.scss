@@ -1,4 +1,3 @@
-@use 'base';
 @import "base";
 
 form {
@@ -9,15 +8,15 @@ form {
     @include flex(row, $alignment: unset);
     justify-content: space-between;
     margin-top: 20px;
-    font-family: base.$primary-font,
-      base.$fallback-font;
+    font-family: $primary-font,
+      $fallback-font;
   }
 
   button {
-    font-family: base.$secondaery-font,
-      base.$fallback-font;
-    background-color: base.$primary-color;
-    color: base.$white-color;
+    font-family: $secondaery-font,
+      $fallback-font;
+    background-color: $primary-color;
+    color: $white-color;
     border: none;
     border-radius: 3px;
     padding: 0.2em 0.3em;
@@ -31,18 +30,18 @@ form {
     resize: none;
     outline: none;
     border: none;
-    border-bottom: 3px solid base.$lines-color;
+    border-bottom: 3px solid $lines-color;
 
   }
 
   textarea::placeholder {
     font-weight: bold;
-    color: base.$lines-color;
+    color: $lines-color;
   }
 
   output {
-    font-family: base.$secondaery-font,
-      base.$fallback-font;
+    font-family: $secondaery-font,
+      $fallback-font;
   }
 
 }
@@ -55,17 +54,17 @@ form {
 /* Warnings
 */
 .count-warning {
-  color: base.$danger-color;
+  color: $danger-color;
 }
 
 .user-input-warning {
   @include flex(row);
   justify-content: flex-start;
-  background-color: base.$danger-bg-color;
+  background-color: $danger-bg-color;
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 4px;
-  color: base.$white-color;
+  color: $white-color;
   font-size: 0.8em;
 
   p {

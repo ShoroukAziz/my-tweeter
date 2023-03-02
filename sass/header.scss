@@ -1,17 +1,16 @@
-@use 'base';
 @import "base";
 
 .site-header {
   @include flex;
   width: 100%;
-  padding-top: base.$nav-height;
-  height: base.$nav-height + base.$header-height;
-  background-color: base.$secondaery-color;
+  padding-top: $nav-height;
+  height: $nav-height + $header-height;
+  background-color: $secondaery-color;
   background-image: url('/images/asfalt-light.png');
   justify-content: center;
 
   h2 {
-    color: base.$white-color;
+    color: $white-color;
     font-weight: 300;
 
     span {
@@ -21,11 +20,11 @@
 }
 
 
-@media (min-width: base.$desktop-width) {
+@media (min-width: $desktop-width) {
 
   .site-header {
     padding-top: unset;
-    height: base.$header-height;
+    height: $header-height;
     flex: 2;
   }
 }
