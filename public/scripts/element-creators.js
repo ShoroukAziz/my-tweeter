@@ -40,7 +40,7 @@ const createTweetElement = function (tweet) {
 const createWarningElement = function (errorMesage) {
   const id = generateRandomId();
   return {
-    element:
+    warningElement:
       $(`
     <div class="user-input-warning" id = "${id}">
         <i class="fa-solid fa-triangle-exclamation"></i>
@@ -48,6 +48,6 @@ const createWarningElement = function (errorMesage) {
         <i class="close fa-solid fa-circle-xmark"></i>
     </div>
   `),
-    id: id
+    elementId: id
   };
 }
