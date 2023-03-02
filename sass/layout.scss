@@ -22,7 +22,6 @@ html {
 
 body {
   @include flex;
-  align-items: center;
   color: base.$lines-color;
   background-color: base.$background-color;
   font-size: 24px;
@@ -35,13 +34,12 @@ body {
 
 .container {
   @include flex;
-  align-items: center;
   width: 100%;
 }
 
 
 main {
-  @include flex;
+  @include flex($alignment: unset);
   width: 90%;
   margin-top: 50px;
   row-gap: 30px;

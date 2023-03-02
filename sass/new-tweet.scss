@@ -3,13 +3,13 @@
 
 form {
 
-  @include flex;
+  @include flex($alignment: unset);
 
   div {
-    @include flex(row);
+    @include flex(row, $alignment: unset);
     justify-content: space-between;
     margin-top: 20px;
-    font-family: base.$secondaery-font,
+    font-family: base.$primary-font,
       base.$fallback-font;
   }
 
@@ -54,7 +54,6 @@ form {
 .user-input-warning {
   @include flex(row);
   justify-content: flex-start;
-  align-items: center;
   background-color: base.$danger-bg-color;
   padding: 15px;
   margin-bottom: 20px;

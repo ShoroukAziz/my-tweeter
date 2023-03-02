@@ -5,7 +5,7 @@
  * Tweet Container
  */
 article.tweet {
-  @include flex;
+  @include flex($alignment: unset);
   border: 3px solid base.$lines-color;
   margin: 20px 0px;
   padding: 20px;
@@ -21,7 +21,6 @@ article.tweet:hover {
 article.tweet header {
   @include flex(row);
   justify-content: flex-start;
-  align-items: center;
 }
 
 article.tweet img {
@@ -52,7 +51,7 @@ article.tweet section {
  */
 
 article.tweet footer {
-  @include flex(row);
+  @include flex(row, $alignment: unset);
   justify-content: space-between;
   font-size: 0.7em;
   padding: 5px 10px;

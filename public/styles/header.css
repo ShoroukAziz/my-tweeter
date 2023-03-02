@@ -1,13 +1,13 @@
 .site-header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   padding-top: 120px;
   height: 520px;
   background-color: #D69A27;
   background-image: url("/images/asfalt-light.png");
   justify-content: center;
-  align-items: center;
 }
 .site-header h2 {
   color: #ffffff;
