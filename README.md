@@ -1,18 +1,74 @@
-# Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+# 🐣Tweeter
+### A simple, single-page Twitter clone.
+[![made-with-node](https://img.shields.io/badge/Made%20with-JavaScript%20-yellow)](https://nodejs.org/en/) [![made-with-express](https://img.shields.io/badge/Made%20with-Express.js%20-black)](https://expressjs.com/)
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+## Table of Content
+- [�Tweeter](#tweeter)
+    - [A simple, single-page Twitter clone.](#a-simple-single-page-twitter-clone)
+  - [Table of Content](#table-of-content)
+  - [🌟 Features](#-features)
+  - [🚀 Getting Started](#-getting-started)
+  - [🧱 Main Structure](#-main-structure)
+  - [Product Overview](#product-overview)
+  - [📦 Tech Stack (Dependencies)](#-tech-stack-dependencies)
+    - [🔙 Backend](#-backend)
+    - [🧰 Development Dependencies](#-development-dependencies)
+    - [👁‍🗨 Frontend Dependencies](#-frontend-dependencies)
+  - [⚠️ Disclaimer](#️-disclaimer)
 
-## Getting Started
 
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
 
-## Dependencies
+## 🌟 Features
+- TODO
 
-- Express
-- Node 5.10.x or above
+---
+## 🚀 Getting Started
+  - clone the repo <br>
+  `git clone <repo> my-tweeter`
+  - Navigate to the repo<br>
+  `cd my-tweeter`
+  - Install all the depndencies <br>
+  `npm install`
+  - Run the server: <br>
+  `npm run local`  <br>
+  - Visit the app in your browser: `http://127.0.0.1:8080/` 
+  - Start Tweeting 🐥🎉🎇
+
+---
+
+
+## 🧱 Main Structure
+```sh
+#todo
+
+```
+---
+## Product Overview
+-todo: add gifs & screenshots
+
+
+---
+## 📦 Tech Stack (Dependencies)
+//todo: complete
+  ### 🔙 Backend
+  - 🚄 [Express](express.js)
+
+
+ ### 🧰 Development Dependencies
+
+  - 👿 [Nodemon](https://www.npmjs.com/package/nodemon)
+
+ ### 👁‍🗨 Frontend Dependencies
+
+- 🔠 [FontAwesome](https://fontawesome.com/)
+---
+
+## ⚠️ Disclaimer
+- This is a project for [LHL web development bootcamp](https://www.lighthouselabs.ca/) and is not meant for production use
+
+
+
+<img src="https://camo.githubusercontent.com/7dd59506447a5060c5df4ab9da2c7a3fefcb0e1cd86ba40d31a45666bc98e6e0/687474703a2f2f466f7254686542616467652e636f6d2f696d616765732f6261646765732f6275696c742d776974682d6c6f76652e737667"/>
+
+[⬆ Go to beginning](#🐣Tweeter)
