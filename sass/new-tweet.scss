@@ -40,6 +40,11 @@ form {
     color: base.$lines-color;
   }
 
+  output {
+    font-family: base.$secondaery-font,
+      base.$fallback-font;
+  }
+
 }
 
 
