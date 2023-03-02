@@ -39,11 +39,11 @@ $(document).ready(function () {
 
     if ($(window).scrollTop() > 0) {
       $('button.compose').addClass('visable');
-      $('div.compose').addClass('hidden');
+      $('nav div.compose').addClass('hidden');
     }
     else {
       $('button.compose').removeClass('visable');
-      $('div.compose').removeClass('hidden');
+      $('nav div.compose').removeClass('hidden');
     }
   })
 
