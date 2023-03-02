@@ -11,19 +11,28 @@ nav {
   color: base.$white-color;
   padding-left: 1.5em;
   padding-right: 1.5em;
+
+  i {
+    color: base.$danger-color;
+  }
+
+  span {
+    font-family: base.$secondaery-font, base.$fallback-font;
+  }
+
+  .compose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+      position: relative;
+      animation: bounce 1.5s ease infinite alternate-reverse;
+    }
+  }
 }
 
-.compose {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-}
-
-.compose i {
-  position: relative;
-  animation: bounce 1.5s ease infinite alternate-reverse;
-}
 
 @keyframes bounce {
   0% {
@@ -35,13 +44,6 @@ nav {
   }
 }
 
-nav i {
-  color: base.$danger-color;
-}
-
-nav span {
-  font-family: base.$secondaery-font, base.$fallback-font;
-}
 
 @media (min-width:1024px) {
 
