@@ -1,8 +1,8 @@
 const TWEET_LENGTH = 140;
 
 $(document).ready(function () {
-  // --- our code goes here ---
 
+  // Keep track of charachter count
   $('#tweet-text').on("input", function () {
 
     const currentCounter = TWEET_LENGTH - $(this).val().length;
@@ -15,6 +15,14 @@ $(document).ready(function () {
       $(counterNode).removeClass('count-warning');
     }
 
+  })
+
+  // Automatically grow the text area to fit input
+  $('#tweet-text').on("input", function () {
+
+    $(this).css('overflow', 'hidden')
+    $(this).height('10px')
+    $(this).height($(this)[0].scrollHeight + 10 + "px");
   })
 
 
