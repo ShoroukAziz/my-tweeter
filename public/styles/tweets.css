@@ -58,12 +58,10 @@ article.tweet footer {
 }
 
 article.tweet i {
-  font-size: 0.7em;
   color: #4056A1;
   margin: 2px;
 }
 
 article.tweet i:hover {
-  font-size: 0.7em;
   color: #D69A27;
 }
