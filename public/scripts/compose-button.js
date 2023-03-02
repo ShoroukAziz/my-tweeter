@@ -20,8 +20,8 @@ $(document).ready(function () {
 
   $('.compose').click(function () {
 
-    $(".new-tweet textarea")[0].focus();
-    scrollToElement($(".new-tweet")[0], NAV_HIGHT);
+    $("textarea")[0].focus();
+    scrollToElement($("form")[0], NAV_HIGHT);
 
   });
 

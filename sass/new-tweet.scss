@@ -1,9 +1,17 @@
 @use 'base';
 @import "base";
 
-.new-tweet {
+form {
+
   @include flex;
-  justify-content: center;
+
+  div {
+    @include flex(row);
+    justify-content: space-between;
+    margin-top: 20px;
+    font-family: base.$secondaery-font,
+      base.$fallback-font;
+  }
 
   button {
     background-color: base.$primary-color;
@@ -14,35 +22,27 @@
     cursor: pointer;
   }
 
-}
+  textarea {
 
-form {
-  @include flex;
+    height: 50px;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid base.$lines-color;
 
-  div {
-    @include flex(row);
-    justify-content: space-between;
-    margin-top: 20px;
-    font-family: base.$secondaery-font,
-      base.$fallback-font;
   }
-}
 
-textarea {
-
-  height: 50px;
-  background-color: transparent;
-  resize: none;
-  outline: none;
-  border: none;
-  border-bottom: 3px solid base.$lines-color;
+  textarea::placeholder {
+    font-weight: bold;
+    color: base.$lines-color;
+  }
 
 }
 
-textarea::placeholder {
-  font-weight: bold;
-  color: base.$lines-color;
-}
+
+
+
 
 /*
 /* Warnings
