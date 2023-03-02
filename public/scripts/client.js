@@ -74,13 +74,13 @@ $(document).ready(function () {
 
   loadTweets();
 
-  $('section.new-tweet form').on('submit', function (e) {
+  $('form').on('submit', function (e) {
 
     e.preventDefault();
 
     const { isValid, errorMesage } = validateTweet($('#tweet-text').val());
     if (!isValid) {
-      $('section.new-tweet').prepend(`
+      $('form').prepend(`
           <div class="user-input-warning">
           <i class="fa-solid fa-triangle-exclamation"></i>
           <p> ${errorMesage} </p>
@@ -100,7 +100,7 @@ $(document).ready(function () {
   });
 
   // Attach a delegated event handler
-  $('section.new-tweet').on('click', '.close', function (e) {
+  $('form').on('click', '.close', function (e) {
     $(this).parent().remove();
   })
 
