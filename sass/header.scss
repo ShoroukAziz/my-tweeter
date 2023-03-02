@@ -1,17 +1,19 @@
+@use 'base';
+
 .site-header {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-top: 120px;
   height: 520px;
-  background-color: #D69A27;
+  background-color: base.$secondaery-color;
   background-image: url('/images/asfalt-light.png');
   justify-content: center;
   align-items: center;
 }
 
 .site-header h2 {
-  color: #ffffff;
+  color: base.$white-color;
   font-weight: 300;
 }
 

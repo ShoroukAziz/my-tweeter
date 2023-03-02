@@ -1,3 +1,5 @@
+@use 'base';
+
 .new-tweet {
   display: flex;
   flex-direction: column;
@@ -13,7 +15,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  font-family: 'Bungee', sans-serif;
+  font-family: base.$secondaery-font,
+    base.$fallback-font;
 }
 
 #tweet-text {
@@ -23,18 +26,18 @@
   resize: none;
   outline: none;
   border: none;
-  border-bottom: 3px solid #545149;
+  border-bottom: 3px solid base.$lines-color;
 
 }
 
 #tweet-text::placeholder {
   font-weight: bold;
-  color: #545149;
+  color: base.$lines-color;
 }
 
 .new-tweet button {
-  background-color: #4056A1;
-  color: #ffffff;
+  background-color: base.$primary-color;
+  color: base.$white-color;
   border: none;
   border-radius: 3px;
   padding: 0.2em 0.3em;
@@ -42,18 +45,18 @@
 }
 
 .count-warning {
-  color: #FF0000;
+  color: base.$danger-color;
 }
 
 .user-input-warning {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #D85351;
+  background-color: base.$danger-bg-color;
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 4px;
-  color: #ffffff;
+  color: base.$white-color;
   font-size: 0.8em;
 }
 

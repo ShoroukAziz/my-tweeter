@@ -1,3 +1,5 @@
+@use 'base';
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -6,7 +8,7 @@ nav {
   top: 0px;
   width: 100%;
   height: 120px;
-  color: #ffffff;
+  color: base.$white-color;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
@@ -34,16 +36,16 @@ nav {
 }
 
 nav i {
-  color: red;
+  color: base.$danger-color;
 }
 
 nav span {
-  font-family: 'Bungee', sans-serif;
+  font-family: base.$secondaery-font, base.$fallback-font;
 }
 
 @media (min-width:1024px) {
 
   nav {
-    background-color: #4056A1;
+    background-color: base.$primary-color;
   }
 }
