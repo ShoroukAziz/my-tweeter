@@ -16,18 +16,19 @@ const escape = function (userInput) {
 
 
 /**
- * Checks wheather a tweet is valid (not empty & not more than 140 characters)
+ * Checks wheather a tweet is valid (not empty & not more than the max tweet length characters)
  * and returns an appropriate error message in case it's not valid.
- * @param  {string}                 tweetText   [the user input]
+ * @param  {string}                 tweetText       [the user input]
+ * @param  {number}                 maxTweetLength  [maximum allowed length for a tweet]
  * @return {{isValid: boolean,
- *           errorMesage:string}}               [an object with a boolean that indicates validity and an error message incase of errors]
+ *           errorMesage:string}}                   [an object with a boolean that indicates validity and an error message incase of errors]
  */
-const validateTweet = function (tweetText) {
+const validateTweet = function (tweetText, maxTweetLength) {
   if (!tweetText.trim()) {
-    return { isValid: false, errorMesage: 'Your Tweet can\'t be empty!' };
+    return { isValid: false, errorMesage: systemMessages.emptyTweetError };
   }
-  if (tweetText.length > 140) {
-    return { isValid: false, errorMesage: 'Your Tweet can\'t be more than 140 characters. Keep it short & sweet!' };
+  if (tweetText.length > maxTweetLength) {
+    return { isValid: false, errorMesage: systemMessages.longTweetError };
   }
   return { isValid: true };
 }
