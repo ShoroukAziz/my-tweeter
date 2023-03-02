@@ -23,7 +23,7 @@ const escape = function (userInput) {
  *           errorMesage:string}}               [an object with a boolean that indicates validity and an error message incase of errors]
  */
 const validateTweet = function (tweetText) {
-  if (!tweetText) {
+  if (!tweetText.trim()) {
     return { isValid: false, errorMesage: 'Your Tweet can\'t be empty!' };
   }
   if (tweetText.length > 140) {
