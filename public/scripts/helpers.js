@@ -31,3 +31,11 @@ const validateTweet = function (tweetText) {
   }
   return { isValid: true };
 }
+
+/**
+ * Generates a random alphanumeric id
+ * @return {string}        [random id]
+ */
+const generateRandomId = function () {
+  return Math.random().toString(36).slice(2);;
+}
