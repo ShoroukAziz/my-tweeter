@@ -48,3 +48,42 @@ form {
   }
 
 }
+
+
+.slideUp {
+  animation-duration: 0.5s;
+  animation-name: slideUp;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+  from {
+    margin-top: 0%;
+  }
+
+  to {
+    margin-top: -205px;
+  }
+}
+
+
+.slideDown {
+  animation-duration: 0.5s;
+  animation-name: slideDown;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  from {
+    margin-top: -205px;
+  }
+
+  to {
+    margin-top: 0%;
+
+  }
+}
+
+.hidden {
+  z-index: -100;
+}
