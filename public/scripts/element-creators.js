@@ -51,3 +51,23 @@ const createWarningElement = function (errorMessage) {
     elementId: id
   };
 }
+
+
+/**
+ * Creates a jQuery node for a sever errors
+ * Displays the status code , states text and error message
+ * @param  {number}           statusCode     [the response status code received from the server]
+ * @param  {errorMessage}     errorMessage   [The error message received from the server]
+ * @param  {statusText}       errorMessage   [The status message received from the server]
+ * @return {jQueryNode}                  [an HTML div node that contains the error data]
+ */
+const createServerErrorElement = function (statusCode, errorMessage, statusText) {
+  return $(`
+    <div class="server-error">
+      <h1> ${statusCode} </h1>
+      <h2> ${statusText} </h2>
+      <p> ${errorMessage} </p>
+    </div>
+
+`);
+}
