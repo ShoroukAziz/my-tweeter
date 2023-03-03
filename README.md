@@ -12,6 +12,7 @@
   - [🌟 Features](#-features)
   - [🚀 Getting Started](#-getting-started)
   - [Product Overview](#product-overview)
+  - [](#)
   - [📦 Tech Stack (Dependencies)](#-tech-stack-dependencies)
     - [🔙 Backend](#-backend)
     - [🧰 Development Dependencies](#-development-dependencies)
@@ -47,6 +48,22 @@
 ## Product Overview
 <img src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/product%20overview.gif?raw=true"/>
 
+- **Tweet**
+<img src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/tweet.gif?raw=true"/>
+
+- **Toggel form**
+<img src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/toggle%20form.gif?raw=true"/>
+
+- **Scroll button**
+<img src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/scroll%20up%20button.gif?raw=true"/>
+
+
+- **user error messages**
+  <img src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/user%20error.PNG?raw=true"/>
+
+- **server messages**
+  <img src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/server%20error.PNG?raw=true"/>
+
 - **Small screen**
   
   <img height="500" src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/small%20screen.PNG?raw=true"/>
@@ -57,7 +74,6 @@
 
 - **Large screen**
   <img src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/large-screen.PNG?raw=true"/>
-
 ---
 
 ## 📦 Tech Stack (Dependencies)
