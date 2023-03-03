@@ -23,6 +23,15 @@ const loadTweets = function () {
 }
 
 /**
+ * Clears the text area after submitting a new tweet and fetches all the tweets again
+ */
+const newSubmittedTweetHandler = function () {
+
+  $('textarea').val('');
+  loadTweets();
+}
+
+/**
  * Renders a list of tweets into the tweets secion.
  * @param  {Array.<tweet>} tweets       [a list of all the tweet objects that need to be rendered]
  */
@@ -65,7 +74,7 @@ $(document).ready(function () {
       type: "POST",
       url: '/tweets',
       data: $(this).serialize(),
-      success: loadTweets
+      success: newSubmittedTweetHandler
     });
 
   });
