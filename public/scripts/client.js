@@ -19,6 +19,7 @@ const loadTweets = function () {
     type: "GET",
     url: '/tweets',
     success: renderTweets,
+    error: serverErrorHandler
   });
 }
 
@@ -44,6 +45,17 @@ const renderTweets = function (tweets) {
   });
 
 }
+
+/**
+ * Displays an error message and a status code incases of server errors
+ * @param  {object} err       [the error returned by the server]
+ */
+const serverErrorHandler = function (err) {
+  console.log(err);
+  $('main').empty();
+  $('main').append(createServerErrorElement(err.status, err.responseJSON.error, err.statusText));
+}
+
 
 
 $(document).ready(function () {
@@ -74,7 +86,8 @@ $(document).ready(function () {
       type: "POST",
       url: '/tweets',
       data: $(this).serialize(),
-      success: newSubmittedTweetHandler
+      success: newSubmittedTweetHandler,
+      error: serverErrorHandler
     });
 
   });
