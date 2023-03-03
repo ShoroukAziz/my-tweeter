@@ -4,7 +4,7 @@
 [![made-with-node](https://img.shields.io/badge/Made%20with-JavaScript%20-yellow)](https://nodejs.org/en/) [![made-with-express](https://img.shields.io/badge/Made%20with-Express.js%20-black)](https://expressjs.com/)
 
 ## Table of Content
-- [�Tweeter](#tweeter)
+- [🐣Tweeter](#tweeter)
     - [A simple, single-page Twitter clone.](#a-simple-single-page-twitter-clone)
   - [Table of Content](#table-of-content)
   - [🌟 Features](#-features)
