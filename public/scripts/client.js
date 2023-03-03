@@ -29,6 +29,7 @@ const loadTweets = function() {
 const newSubmittedTweetHandler = function() {
 
   $('textarea').val('');
+  displayMaxTweetLength(MAX_TWEET_LENGHT);
   loadTweets();
 };
 
