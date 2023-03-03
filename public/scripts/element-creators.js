@@ -7,7 +7,7 @@
  * @param  {object}      tweet        [a tweet object]
  * @return {jQueryNode}               [an HTML article node that represents a tweet]
  */
-const createTweetElement = function (tweet) {
+const createTweetElement = function(tweet) {
 
   return $(`
   <article class="tweet">
@@ -29,15 +29,15 @@ const createTweetElement = function (tweet) {
   </footer>
   </article>
   `);
-}
+};
 
 /**
- * Creates a jQuery node for a warning from a warning message 
+ * Creates a jQuery node for a warning from a warning message
  * and assigns it a unique id, to be able to remove it after a few seconds.
  * @param  {string}                            errorMessage   [The warning message]
  * @return {{element:jQueryNode , id:number}}                [an object with a warning node and its unique id]
  */
-const createWarningElement = function (errorMessage) {
+const createWarningElement = function(errorMessage) {
   const id = generateRandomId();
   return {
     warningElement:
@@ -50,7 +50,7 @@ const createWarningElement = function (errorMessage) {
   `),
     elementId: id
   };
-}
+};
 
 
 /**
@@ -61,7 +61,7 @@ const createWarningElement = function (errorMessage) {
  * @param  {statusText}       errorMessage   [The status message received from the server]
  * @return {jQueryNode}                  [an HTML div node that contains the error data]
  */
-const createServerErrorElement = function (statusCode, errorMessage, statusText) {
+const createServerErrorElement = function(statusCode, errorMessage, statusText) {
   return $(`
     <div class="server-error">
       <h1> ${statusCode} </h1>
@@ -70,4 +70,4 @@ const createServerErrorElement = function (statusCode, errorMessage, statusText)
     </div>
 
 `);
-}
+};

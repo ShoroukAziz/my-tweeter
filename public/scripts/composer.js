@@ -11,7 +11,7 @@ const NAV_HIGHT = 120;
  * @param  {jQueryNode} element       [The element you want to scroll to]
  * @param  {Number}     navHight      [The hight of the sticky nav bar in pixels]
  */
-const scrollToElement = function (element, navHight = 0) {
+const scrollToElement = function(element, navHight = 0) {
   const elementTopPosition = element.offsetTop;
   window.scrollTo({
     top: elementTopPosition - navHight - 25,
@@ -19,32 +19,31 @@ const scrollToElement = function (element, navHight = 0) {
     behavior: 'smooth'
   });
 
-}
+};
 
-$(document).ready(function () {
+$(document).ready(function() {
 
   // Scroll to the text area & focus whenever a compose button is clicked
-  $('.compose').click(function () {
+  $('.compose').click(function() {
 
     $("textarea")[0].focus();
     scrollToElement($("form")[0], NAV_HIGHT);
 
   });
 
-  /* Display the composer button in the nav bar 
+  /* Display the composer button in the nav bar
   *  when the page is not scrolled
   *  and, on scrolling hide it and display the other button down the page.
   */
-  $(window).scroll(function () {
+  $(window).scroll(function() {
 
     if ($(window).scrollTop() > 0) {
       $('button.compose').addClass('visable');
       $('nav div.compose').addClass('hidden');
-    }
-    else {
+    } else {
       $('button.compose').removeClass('visable');
       $('nav div.compose').removeClass('hidden');
     }
-  })
+  });
 
 });

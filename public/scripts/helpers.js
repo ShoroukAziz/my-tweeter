@@ -8,7 +8,7 @@
  * @param  {string}   userInput   [the user raw input]
  * @return {string}               [an escaped version of the user input]
  */
-const escape = function (userInput) {
+const escape = function(userInput) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(userInput));
   return div.innerHTML;
@@ -23,7 +23,7 @@ const escape = function (userInput) {
  * @return {{isValid: boolean,
  *           errorMesage:string}}                   [an object with a boolean that indicates validity and an error message incase of errors]
  */
-const validateTweet = function (tweetText, maxTweetLength) {
+const validateTweet = function(tweetText, maxTweetLength) {
   if (!tweetText.trim()) {
     return { isValid: false, errorMesage: systemMessages.emptyTweetError };
   }
@@ -31,12 +31,12 @@ const validateTweet = function (tweetText, maxTweetLength) {
     return { isValid: false, errorMesage: systemMessages.longTweetError };
   }
   return { isValid: true };
-}
+};
 
 /**
  * Generates a random alphanumeric id
  * @return {string}        [random id]
  */
-const generateRandomId = function () {
-  return Math.random().toString(36).slice(2);;
-}
+const generateRandomId = function() {
+  return Math.random().toString(36).slice(2);
+};
