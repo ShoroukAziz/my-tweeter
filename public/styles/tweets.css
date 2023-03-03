@@ -43,6 +43,7 @@ article.tweet section {
   border-bottom: 3px solid #545149;
   padding: 25px 10px;
   margin-bottom: 10px;
+  overflow-wrap: break-word;
 }
 
 /*
