@@ -1,15 +1,16 @@
 
 # 🐣Tweeter
-### A simple, single-page Twitter clone.
+## Better than Twitter!
+### Tweeter is A simple, single-page Twitter clone.
 [![made-with-node](https://img.shields.io/badge/Made%20with-JavaScript%20-yellow)](https://nodejs.org/en/) [![made-with-express](https://img.shields.io/badge/Made%20with-Express.js%20-black)](https://expressjs.com/)
 
 ## Table of Content
 - [🐣Tweeter](#tweeter)
-    - [A simple, single-page Twitter clone.](#a-simple-single-page-twitter-clone)
+  - [Better than Twitter!](#better-than-twitter)
+    - [Tweeter is A simple, single-page Twitter clone.](#tweeter-is-a-simple-single-page-twitter-clone)
   - [Table of Content](#table-of-content)
   - [🌟 Features](#-features)
   - [🚀 Getting Started](#-getting-started)
-  - [🧱 Main Structure](#-main-structure)
   - [Product Overview](#product-overview)
   - [📦 Tech Stack (Dependencies)](#-tech-stack-dependencies)
     - [🔙 Backend](#-backend)
@@ -20,7 +21,12 @@
 
 
 ## 🌟 Features
-- TODO
+- Responsive Design, works with with all screen sizes
+- Single page application ie. no refreshing needed. all the requests are done with AJAX
+- Interactive design
+  - Characters counter
+  - Toggle the  form
+  - like tweets
 
 ---
 ## 🚀 Getting Started
@@ -35,14 +41,7 @@
   - Visit the app in your browser: `http://127.0.0.1:8080/` 
   - Start Tweeting 🐥🎉🎇
 
----
 
-
-## 🧱 Main Structure
-```sh
-#todo
-
-```
 ---
 ## Product Overview
 -todo: add gifs & screenshots
@@ -52,16 +51,22 @@
 ## 📦 Tech Stack (Dependencies)
 //todo: complete
   ### 🔙 Backend
-  - 🚄 [Express](express.js)
+  - [Express](express.js)
+  - body-parser
+  - chance
+  - md5
 
 
  ### 🧰 Development Dependencies
 
-  - 👿 [Nodemon](https://www.npmjs.com/package/nodemon)
+  - [Nodemon](https://www.npmjs.com/package/nodemon)
+  - Sass
 
  ### 👁‍🗨 Frontend Dependencies
 
-- 🔠 [FontAwesome](https://fontawesome.com/)
+-  [FontAwesome](https://fontawesome.com/)
+- jQuery
+
 ---
 
 ## ⚠️ Disclaimer
