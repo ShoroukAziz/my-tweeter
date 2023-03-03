@@ -64,11 +64,11 @@ form {
   @include flex(row);
   justify-content: flex-start;
   background-color: $danger-bg-color;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 20px;
   border-radius: 4px;
   color: $white-color;
-  font-size: 0.8rem;
+  font-size: 1rem;
 
   p {
     margin-left: 15px;

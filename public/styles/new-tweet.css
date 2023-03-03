@@ -49,11 +49,11 @@ form output {
   align-items: center;
   justify-content: flex-start;
   background-color: #D85351;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 20px;
   border-radius: 4px;
   color: #ffffff;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .user-input-warning p {
   margin-left: 15px;
