@@ -22,7 +22,7 @@ body {
   align-items: center;
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
+  font-size: 18px;
   font-family: "Source Sans Pro", sans-serif;
 }
 body .container {
@@ -36,11 +36,19 @@ body .container main {
   flex-direction: column;
   align-items: unset;
   width: 90%;
-  margin-top: 50px;
-  row-gap: 30px;
+  margin-top: 7vh;
+  row-gap: 6vh;
 }
 
+@media (min-width: 768px) {
+  body {
+    font-size: 22px;
+  }
+}
 @media (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
   body .container {
     flex-direction: row;
     align-items: flex-start;
