@@ -3,8 +3,9 @@
 .site-header {
   @include flex;
   width: 100%;
-  padding-top: $nav-height;
-  height: $nav-height + $header-height;
+  padding-top: $nav-height-small + 20;
+  padding-bottom: 20px;
+  height: $nav-height-small + $header-height-small;
   background-color: $secondaery-color;
   background-image: url('/images/asfalt-light.png');
   justify-content: center;
