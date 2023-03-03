@@ -12,7 +12,7 @@ const scrollToTop = function () {
 
 $(document).ready(function () {
 
-  // Scroll to the text area & focus whenever a compose button is clicked
+  // Slide up/down the form  whenever the compose button in the nav bar is clicked
   $('nav .compose').click(function () {
 
     const formElement = $('form');
@@ -23,6 +23,7 @@ $(document).ready(function () {
       formElement.addClass('hidden');
     }
     else if (formElement.hasClass('slideUp')) {
+      //Slide down the form if it's already up
       formElement.toggleClass('slideDown');
       formElement.toggleClass('slideUp');
       setTimeout(() => {
@@ -30,6 +31,7 @@ $(document).ready(function () {
       }, 500);
     }
     else {
+      //Slide up the form if it's already down
       formElement.toggleClass('slideDown');
       formElement.toggleClass('slideUp');
       formElement.toggleClass('hidden');
@@ -39,12 +41,14 @@ $(document).ready(function () {
     $("textarea")[0].focus();
   });
 
-
+  /* Scroll to the top of the page and focus on the form
+  * and lide it down if it was hidden
+  *  whenever the second toggle button is clicked
+  */
   $('button.compose').click(function () {
 
     const formElement = $('form');
 
-    //first click
     if (formElement.hasClass('slideUp')) {
       formElement.toggleClass('slideUp');
       formElement.addClass('hidden');
