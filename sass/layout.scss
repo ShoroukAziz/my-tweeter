@@ -23,7 +23,7 @@ body {
   @include flex;
   color: $lines-color;
   background-color: $background-color;
-  font-size: 24px;
+  font-size: 18px;
   font-family: $primary-font, $fallback-font;
 
   .container {
@@ -42,11 +42,20 @@ body {
 
 }
 
+@media (min-width: $tablet-width) {
+
+  body {
+    font-size: 22px;
+  }
+
+
+}
 
 
 @media (min-width: $desktop-width) {
 
   body {
+    font-size: 24px;
 
     .container {
       flex-direction: row;
