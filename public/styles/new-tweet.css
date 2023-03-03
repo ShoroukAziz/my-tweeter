@@ -35,32 +35,3 @@ form textarea::placeholder {
 form output {
   font-family: "Bungee", sans-serif;
 }
-
-/*
-/* Warnings
-*/
-.count-warning {
-  color: #e00000;
-}
-
-.user-input-warning {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: #D85351;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  color: #ffffff;
-  font-size: 1rem;
-}
-.user-input-warning p {
-  margin-left: 15px;
-}
-
-.close {
-  margin-left: auto;
-  align-self: flex-start;
-  cursor: pointer;
-}

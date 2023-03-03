@@ -1,0 +1,52 @@
+@import "base";
+/*
+/* Server Errors
+*/
+
+.server-error {
+  @include flex;
+  margin: 20px;
+  background-color: $dimmed-color;
+  border: 5px solid $dimmed-color;
+  border-radius: 25px;
+
+  h1 {
+    color: $danger-bg-color;
+    font-size: 5rem;
+    margin: 10px;
+    font-family: $secondaery-font;
+  }
+
+  h2 {
+    margin: 5px;
+  }
+}
+
+/*
+/* Warnings
+*/
+.count-warning {
+  color: $danger-color;
+}
+
+.user-input-warning {
+  @include flex(row);
+  justify-content: flex-start;
+  background-color: $danger-bg-color;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  color: $white-color;
+  font-size: 1rem;
+
+  p {
+    margin-left: 15px;
+  }
+}
+
+
+.close {
+  margin-left: auto;
+  align-self: flex-start;
+  cursor: pointer;
+}

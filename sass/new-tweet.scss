@@ -48,36 +48,3 @@ form {
   }
 
 }
-
-
-
-
-
-/*
-/* Warnings
-*/
-.count-warning {
-  color: $danger-color;
-}
-
-.user-input-warning {
-  @include flex(row);
-  justify-content: flex-start;
-  background-color: $danger-bg-color;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  color: $white-color;
-  font-size: 1rem;
-
-  p {
-    margin-left: 15px;
-  }
-}
-
-
-.close {
-  margin-left: auto;
-  align-self: flex-start;
-  cursor: pointer;
-}

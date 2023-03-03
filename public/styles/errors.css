@@ -1,0 +1,50 @@
+/*
+/* Server Errors
+*/
+.server-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background-color: #C5CBE3;
+  border: 5px solid #C5CBE3;
+  border-radius: 25px;
+}
+.server-error h1 {
+  color: #D85351;
+  font-size: 5rem;
+  margin: 10px;
+  font-family: "Bungee";
+}
+.server-error h2 {
+  margin: 5px;
+}
+
+/*
+/* Warnings
+*/
+.count-warning {
+  color: #e00000;
+}
+
+.user-input-warning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #D85351;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.user-input-warning p {
+  margin-left: 15px;
+}
+
+.close {
+  margin-left: auto;
+  align-self: flex-start;
+  cursor: pointer;
+}
