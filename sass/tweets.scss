@@ -52,7 +52,7 @@ article.tweet section {
 article.tweet footer {
   @include flex(row, $alignment: unset);
   justify-content: space-between;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   padding: 5px 10px;
 }
 
