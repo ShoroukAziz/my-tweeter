@@ -16,6 +16,7 @@
     - [🔙 Backend](#-backend)
     - [🧰 Development Dependencies](#-development-dependencies)
     - [👁‍🗨 Frontend Dependencies](#-frontend-dependencies)
+  - [🙈 Know issues](#-know-issues)
   - [⚠️ Disclaimer](#️-disclaimer)
 
 
@@ -44,33 +45,47 @@
 
 ---
 ## Product Overview
--todo: add gifs & screenshots
+<img src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/product%20overview.gif?raw=true"/>
 
+- **Small screen**
+  
+  <img height="500" src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/small%20screen.PNG?raw=true"/>
+
+
+- **Medium screen**
+  <img src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/med-screen.PNG?raw=true"/>
+
+- **Large screen**
+  <img src="https://github.com/ShoroukAziz/my-tweeter/blob/master/docs/large-screen.PNG?raw=true"/>
 
 ---
+
 ## 📦 Tech Stack (Dependencies)
-//todo: complete
+
   ### 🔙 Backend
   - [Express](express.js)
-  - body-parser
-  - chance
-  - md5
+  - [body-parser](https://www.npmjs.com/package/body-parser)
+  - [chance](https://www.npmjs.com/package/chance)
+  - [md5](https://www.npmjs.com/package/md5)
 
 
  ### 🧰 Development Dependencies
 
   - [Nodemon](https://www.npmjs.com/package/nodemon)
-  - Sass
+  - [Sass](https://sass-lang.com/)
 
  ### 👁‍🗨 Frontend Dependencies
 
--  [FontAwesome](https://fontawesome.com/)
-- jQuery
+- [FontAwesome](https://fontawesome.com/)
+- [jQuery](https://jquery.com/)
 
 ---
-
+## 🙈 Know issues
+- The liking function is just front-end effect and won't persist if you refresh the page
+---
 ## ⚠️ Disclaimer
 - This is a project for [LHL web development bootcamp](https://www.lighthouselabs.ca/) and is not meant for production use
+- The starter code for this project was provided by LHL and comes from [here](https://github.com/lighthouse-labs/tweeter)
 
 
 
